@@ -6,7 +6,7 @@ RUN apk add bash openblas-dev openblas musl-dev postgresql-client postgresql-dev
 RUN cp /usr/share/zoneinfo/Europe/Vienna /etc/localtime
 RUN pip install numpy 
 RUN pip install psycopg2 
-RUN pip install flask sqlalchemy docopt ipython click logdna requests records colorama uwsgi pytest tabulate flask-cors pyjwt passlib reportlab python-dateutil pytz
+RUN pip install flask sqlalchemy docopt ipython click logdna requests records colorama uwsgi pytest tabulate flask-cors pyjwt passlib python-dateutil pytz imaplib2
 
 RUN rm -fr /tmp/* /var/cache/apk/*
 
